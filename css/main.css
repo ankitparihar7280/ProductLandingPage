@@ -1,0 +1,222 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  display: block;
+}
+
+#header {
+  position:fixed;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  top:0;
+  margin:0;
+  background:white;
+  box-shadow: 0 0 5px rgba(0 ,0 , 0, 0.2);
+}
+
+.container {
+  width:100%;
+  max-width: 1024px;
+  margin: 2em auto;
+}
+
+.hero{
+  margin: 5em auto;
+  width: 640px;
+}
+#header-img {
+  max-width: 250px;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+}
+
+input[type="email"], input[type="submit"]{
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  padding: 0.75em;
+}
+
+input[type="submit"] {
+  width: 40%;
+  background-color: yellow;
+  border:none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+}
+.materials ul{
+  max-width:960px;
+  margin:3em auto;
+  display:flex;
+  flex-direction:column;
+  padding:0;
+}
+.materials ul li{
+  margin: auto 0;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.body{
+  width:75%;
+}
+.fa{
+  color:orange;
+}
+.video{
+  display:block;
+  margin: 2em auto;
+}
+.card-container{
+  display:flex;
+  justify-content:space-evenly;
+}
+.card{
+  border:1px solid ;
+  border-radius: 5px;
+  text-align:center;
+  overflow:hidden;
+  min-width:220px;
+  width:300px;
+  margin:1em;
+}
+.card .title{
+  font-size:1.2rem;
+  font-weight:bold;
+  margin: 0;
+  padding:1em 2em;
+  background-color:gainsboro;
+}
+
+.price{
+  margin:1em 0;
+  font-size:1.5rem;
+  font-weight: bold;
+}
+.card p{
+  font-size: 1rem;
+  line-height:1.6;
+}
+.card button{
+  padding:0.75em 2.25em;
+  margin:2em;
+  text-transform: uppercase;
+  border:none;
+  background-color:orange;
+}
+footer{
+  padding:1em 0.5em;
+  background-color:gainsboro;
+}
+footer ul{
+  float :right;
+}
+footer p{
+  margin-left:1em;
+  display: block;
+  color:rgba(0, 0, 0, 0.8)
+}
+
+iframe{
+  width:560px; 
+  height:315px;
+}
+
+@media (max-width: 800px){
+  html{
+    font-size:15px;
+  }
+  .hero{
+    width:400px;
+  }
+  .card-container{
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .card{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .materials ul{
+  margin:3em auto;
+  flex-direction:row;
+  padding:0;
+}
+  .materials ul li{
+    text-align:center;
+  flex-direction: column;
+}
+  
+  iframe{
+  width:360px; 
+  height:300px;
+}
+  
+}
+@media (max-width:500px){
+  html{
+    font-size:14px;
+  }
+  #header{
+    flex-direction:column;
+    font-size:16px;
+    align-items:center;
+  }
+  #header-img{
+    width:250px;
+  }
+  #header ul{
+    display:flex;
+    flex-direction:column;
+  }
+  .hero{
+    text-align:center;
+    max-width:360px;
+  }
+  .materials ul{
+    flex-direction:column;
+  }
+   iframe{
+  width:260px; 
+  height:200px;
+}
+}
